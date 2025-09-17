@@ -6,7 +6,6 @@ DISTCHECK_CONFIGURE_FLAGS = --enable-introspection --enable-gtk-doc
 SUBDIRS = po \
 	jsextensions \
 	libseed \
-	libgjs-private \
 	src \
 	modules \
 	tests \
@@ -55,11 +54,7 @@ if PROFILE_MODULES
 	cd modules/sandbox/.libs ; gcov *.c
 	cd modules/sqlite/.libs ; gcov *.c
 endif
-
-if PROFILE_MODULES
-	cp modules/gjs/system/*.c modules/system/.libs/
-endif
-
+ 
 profile-gui: profile
 
 if PROFILE_MODULES
