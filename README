@@ -1,3 +1,10 @@
+Seed is not supported anymore - but since I still use it - heres a version that at least can be built, and run somethings
+
+This should work on debian.. - after you install all the required packages
+./autogen.sh --prefix=/usr   --disable-mpfr-module  
+make 
+
+
 === Seed README ===
 
 Seed is a library and interpreter, dynamically bridging (through gobject-introspection) the WebKit JavaScriptCore engine with the GObject type system. In a more concrete sense, Seed enables you to immediately write applications around a significant portion of the GNOME platform, and easily embed JavaScript as a scripting language in your GObject library.
